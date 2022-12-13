@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <title>안중환의 포트폴리오 | portfolio</title>
+  </head>
+  <body>
+    <div class="test">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav>
+      <div class="nav_title">
+        <a href="./index.html">
+          <div>Ahn Joong Hwan</div>
+        </a>
+      </div>
+      <div class="nav_content">
+        <a href="./aboutme.html">
+          <div>About me</div>
+          <div class="bar_container">
+            <div class="bar_current"></div>
+          </div>
+        </a>
+        <a href="./portfolio.html">
+          <div>Portfolio</div>
+          <div class="bar_container">
+            <div class="bar_current"></div>
+          </div>
+        </a>
+        <a href="./contact.html">
+          <div>Contact</div>
+          <div class="bar_container">
+            <div class="bar_current"></div>
+          </div>
+        </a>
+      </div>
+      <div class="nav_login">
+        <a href="#none">
+          <div>회원가입</div>
+        </a>
+        <a href="#none">
+          <div>로그인</div>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="LB" onclick="LBClick();">◁</div>
+      <div class="mini_container">
+        <img id="mini1" class="mini_img1" src="./images/youtube_clone.png" />
+      </div>
+      <div class="main_big">
+        <a
+          id="main_href"
+          target="_blank"
+          href="https://mechatroahn.github.io/naver_clone/"
+        >
+          <img id="main_img" src="./images/naver_clone.png" />
+        </a>
+        <h1 id="main_title">네이버 홈페이지 클론코딩</h1>
+      </div>
+      <div class="mini_container">
+        <img id="mini2" class="mini_img2" src="./images/nexon_clone.png" />
+      </div>
+      <div class="RB" onclick="RBClick();">▷</div>
+    </main>
+
+    <div class="square">
+      <span></span>
+      <span></span>
+      <span></span>
+      <div>
+        <h2>이상으로 제 포트폴리오는 끝입니다.</h2>
+        <p>저에게 궁금하신것이 있다면 다음 파트로 넘어가주십시오.</p>
+        <a href="./contact.html">입장</a>
+      </div>
+    </div>
+
+    <script>
+      let now = 1;
+
+      function LBClick() {
+        now--;
+        if (now < 1) {
+          now = 4;
+        }
+
+        if (now == 1) {
+          document.getElementById("main_title").innerText =
+            "네이버 홈페이지 클론코딩";
+          document.getElementById("main_img").src = "./images/naver_clone.png";
+          document.getElementById("main_href").href =
+            "https://mechatroahn.github.io/naver_clone/";
+          document.getElementById("mini1").src = "./images/youtube_clone.png";
+          document.getElementById("mini2").src = "./images/nexon_clone.png";
+        } else if (now == 2) {
+          document.getElementById("main_title").innerText =
+            "넥슨 홈페이지 클론코딩";
+          document.getElementById("main_img").src = "./images/nexon_clone.png";
+          document.getElementById("main_href").href =
+            "https://mechatroahn.github.io/nexon_clone/";
+
+          document.getElementById("mini1").src = "./images/naver_clone.png";
+          document.getElementById("mini2").src = "./images/netmarble_clone.png";
+        } else if (now == 3) {
+          document.getElementById("main_title").innerText =
+            "넷마블 홈페이지 클론코딩";
+          document.getElementById("main_img").src =
+            "./images/netmarble_clone.png";
+          document.getElementById("main_href").href =
+            "https://mechatroahn.github.io/netmarble_clone/";
+
+          document.getElementById("mini1").src = "./images/nexon_clone.png";
+          document.getElementById("mini2").src = "./images/youtube_clone.png";
+        } else if (now == 4) {
+          document.getElementById("main_title").innerText =
+            "유튜브 홈페이지 클론코딩";
+          document.getElementById("main_img").src =
+            "./images/youtube_clone.png";
+          document.getElementById("main_href").href =
+            "https://mechatroahn.github.io/youtube_clone/";
+
+          document.getElementById("mini1").src = "./images/netmarble_clone.png";
+          document.getElementById("mini2").src = "./images/naver_clone.png";
+        }
+      }
+
+      function RBClick() {
+        now++;
+
+        if (now > 4) {
+          now = 1;
+        }
+        if (now == 1) {
+          document.getElementById("main_title").innerText =
+            "네이버 홈페이지 클론코딩";
+          document.getElementById("main_img").src = "./images/naver_clone.png";
+          document.getElementById("main_href").href =
+            "https://mechatroahn.github.io/naver_clone/";
+          document.getElementById("mini1").src = "./images/youtube_clone.png";
+          document.getElementById("mini2").src = "./images/nexon_clone.png";
+        } else if (now == 2) {
+          document.getElementById("main_title").innerText =
+            "넥슨 홈페이지 클론코딩";
+          document.getElementById("main_img").src = "./images/nexon_clone.png";
+          document.getElementById("main_href").href =
+            "https://mechatroahn.github.io/nexon_clone/";
+
+          document.getElementById("mini1").src = "./images/naver_clone.png";
+          document.getElementById("mini2").src = "./images/netmarble_clone.png";
+        } else if (now == 3) {
+          document.getElementById("main_title").innerText =
+            "넷마블 홈페이지 클론코딩";
+          document.getElementById("main_img").src =
+            "./images/netmarble_clone.png";
+          document.getElementById("main_href").href =
+            "https://mechatroahn.github.io/netmarble_clone/";
+
+          document.getElementById("mini1").src = "./images/nexon_clone.png";
+          document.getElementById("mini2").src = "./images/youtube_clone.png";
+        } else if (now == 4) {
+          document.getElementById("main_title").innerText =
+            "유튜브 홈페이지 클론코딩";
+          document.getElementById("main_img").src =
+            "./images/youtube_clone.png";
+          document.getElementById("main_href").href =
+            "https://mechatroahn.github.io/youtube_clone/";
+
+          document.getElementById("mini1").src = "./images/netmarble_clone.png";
+          document.getElementById("mini2").src = "./images/naver_clone.png";
+        }
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/portfolio.js"></script>
+  </body>
+</html>
