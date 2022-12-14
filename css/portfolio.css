@@ -131,6 +131,7 @@ nav {
   position: absolute;
   top: 0;
   width: 100%;
+  padding-left: 15px;
   height: 80px;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;

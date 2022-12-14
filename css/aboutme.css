@@ -80,6 +80,7 @@ a {
 
 nav {
   position: absolute;
+  padding-left: 15px;
   top: 0;
   width: 100%;
   height: 80px;

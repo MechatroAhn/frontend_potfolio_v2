@@ -12,6 +12,7 @@ body {
   background-size: cover;
   position: relative;
   min-width: 1300px;
+  width: 100%;
 }
 
 .gate1 {
